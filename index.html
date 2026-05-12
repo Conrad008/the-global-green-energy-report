@@ -13,19 +13,18 @@
     <header>
         <h1>Global Green Energy Report</h1>
         <nav aria-label="Navigation">
-        <ul>
+        <ol>
             <li><a href="#summary">Executive summary</a></li> 
-            <li><a href="#methodology">Methods used</a></li>
+            <li><a href="#methodology">methodology</a></li>
             <li><a href="#results">findings</a></li>
             <li><a href="#recomendations">recommendations</a></li>
-        </ul>
+        </ol>
             
         </nav>
     </header>
     <main>
-        <article>
-            <section id="summary">
-                <h2>Executive summary</h2>
+        <section id="summary">
+                <article><h2>Executive summary</h2>
                 <p>
                     This report evaluates the operational efficiency of a distributed
                     cloud infrastructure under enterprise-level workloads. <br> The study
@@ -40,11 +39,31 @@
                 <p>
                     organization optimization reduced average response time by 19%.
                 </p>
-
-
-            </section>
-        </article>
+            </article>
+        </section>
+        <section id="methodology">
+            <h2>methodology</h2>
+            <article>
+                <h3>Methods of Data Collection</h3>
+                <p>
+                    data was collected through simulations of a standard IEEE 39-bus system.
+                    <br> this took place over a period of 30 days. <br>
+                    <br> The primary variables measured include : <br>
+                    <p>
+                        <strong>rate of frequency change</strong> :measured in Hz/s <br>
+                        <strong>frequency nadir</strong> :The lowest frequency point reached following a contingency <br>
+                        <strong>Voltage support</strong> : Reactive power compensation provided by smart inverters <br>
+                    </p>  
+                </p>
+            </article>
+            <article>
+                    <h3>Testing Environment</h3>
+                        <p>
+                           The environment consisted of containerized services deployed on
+                           a Kubernetes cluster with load balancing and auto-scaling enabled.
+                        </p>
+            </article>
+        </section>
     </main>
-    
 </body>
 </html>
